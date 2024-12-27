@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Registration Form</title>
+</head>
+<body>
+    <!-- css code  -->
+    <style>
+         body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height:1.6;
+        }
+        form   {
+            max-width: 500px;
+            margin: auto;
+        }
+        fieldset{
+            border: 5px #518085 solid;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        /* label {
+            display: block;
+            margin: 10px 0 5px;
+        } */
+
+        input, select, textarea, button {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #4a12e5;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <!-- heading -->
+
+    <h1>Create your Account </h1>
+    <p>Sign up to access our exclusive content and stay Updated</p>
+
+    <!-- creating form -->
+
+    <form> 
+        <fieldset>
+            <legend>Personal Details</legend>
+        <!-- personal info  -->
+        <label>Full Name: </label>
+        <input type="text" placeholder="Enter your Name" title="Enter Name here" aria-required="true" required><br><br>
+        
+        <!-- email  -->
+        <label>Email : </label>&nbsp; &nbsp; &nbsp; 
+        <input type="text"  placeholder="Enter your Email" title="Enter Your Valid Email here"  aria-required="true" required><br><br>
+
+        <!-- phone no.  -->
+        <label>Phone no. :</label>
+        <input type="tel" pattern="[0-9]{10}" placeholder="Enter Phone Number" title="Enter Phone number here" aria-required="true" requird><br>
+        
+
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Account Details</legend>
+        <!-- account details  -->
+        <label>Username:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="username" minlength="5" placeholder="Enter your username" title="Enter User Name here" aria-required="true" required><br><br>
+
+
+        <!-- password  -->
+        <label>Password:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="password" minlength="8" title="Enter 8 Digit Password" placeholder="Enter password" aria-required="true" requird><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" minlength="8"  title="Enter Confirm Password" placeholder="Confirm Password" aria-required="true" requird><br>
+        
+    </fieldset><br>
+    <fieldset>
+        <legend>Additional Information</legend>        
+        <!-- dob  -->
+        <label>Date Of Birth:</label>
+        <input type="date" requird><br><br>
+       
+        <!-- gender dropdown  -->
+        <label>Gender:</label>
+        <select name="Gender" id="" aria-required="true" >
+            <option>Choose</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select><br><br>
+    
+        <!-- image input  -->
+        <label>Profile:</label>
+        <input type="file"  accept="image/*"><br>
+    </fieldset>  <br>
+
+    <!-- comments  -->
+    <fieldset>
+        <legend>Comments</legend>
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+    </fieldset>
+        <!-- terms and confitions -->
+        <h5>Terms And Conditions</h5>
+        
+        <!-- chk box  -->
+        <input type="checkbox" required style="width: 5%;">
+        <label for="Terms">I agree All the Given Terms And conditions.</label><br><br>
+       
+        <!-- submit btn  -->
+        <button>Submit</button> 
+         
+        <!-- reset btn  -->
+         
+       <button>Reset</button>
+
+
+    </form>
+
+
+
+
+
+</body>
+</html>
