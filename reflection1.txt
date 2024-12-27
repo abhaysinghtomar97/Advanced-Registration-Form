@@ -1,0 +1,19 @@
+
+Approach:
+
+The form is structured using  for grouping related fields,  for titles, and ARIA attributes for accessibility.
+ Each section logically organizes user input types. The design focuses on usability and clarity.
+
+
+Challenges included ensuring proper validation, maintaining a responsive layout, and learning to 
+use ARIA attributes effectively to improve accessibility for users with assistive technologies.
+
+
+Learning:
+
+I learned the importance of field, titles, and ARIA attributes in enhancing accessibility and usability. 
+Additionally, I gained a deeper understanding of structuring forms semantically, 
+ensuring proper validation techniques, and creating user-friendly forms that adhere to best practices for web development.
+Loved this exercise......
+
+Thankyou team GDGOC!
